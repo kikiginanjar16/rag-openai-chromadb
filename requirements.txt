@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pdfplumber
+chromadb
+sentence-transformers
+torch
+requests
+openai
