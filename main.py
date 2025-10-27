@@ -1,6 +1,6 @@
 import os
 from typing import List, Tuple
-
+from dotenv import load_dotenv
 from fastapi import FastAPI, UploadFile, File, Form
 from fastapi.responses import JSONResponse
 import uvicorn
@@ -13,6 +13,8 @@ from sentence_transformers import SentenceTransformer
 
 import requests
 from openai import OpenAI
+
+load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
 
 
